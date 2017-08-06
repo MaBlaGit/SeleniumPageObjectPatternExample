@@ -2,9 +2,8 @@
 """Search course test."""
 
 from letskodeitpop.base.base_setup import BaseSetup
-from letskodeitpop.base.webdriver_custom_class import WebDriverCustomClass
 from letskodeitpop.pages.home_page.home import HomePage
-from letskodeitpop.pages.course_page.courses import CoursePage
+from letskodeitpop.pages.courses_page.courses import CoursePage
 import unittest
 
 
@@ -12,7 +11,6 @@ class SearchCourses(BaseSetup, unittest.TestCase):
 
     def setUp(self):
         super(SearchCourses, self).setUp()
-        self.webdriver_custom = WebDriverCustomClass(self.driver)
         self.home_page = HomePage(self.driver)
         self.course_page = CoursePage(self.driver)
 

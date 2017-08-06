@@ -78,7 +78,7 @@ class WebDriverCustomClass(object):
             element = wait.until(EC.visibility_of_element_located((by_type, locator)))
             return element
         except:
-            raise Exception('Element {0} is not visible'.format(locator))
+            raise Exception('Element {0} is not visible'.format(locator_type))
 
     def is_element_selected(self, locator, locator_type='id'):
         try:
@@ -88,4 +88,4 @@ class WebDriverCustomClass(object):
             if element.is_selected():
                 element.click()
         except:
-            raise Exception("Element {0} is not visible".format(locator))
+            raise Exception("Element {0} is not visible".format(locator_type))

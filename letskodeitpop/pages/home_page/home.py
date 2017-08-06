@@ -12,6 +12,7 @@ class HomePage(BaseSetup, WebDriverCustomClass):
     _web_page_title = '//h2[contains(text(), "Welcome to Let\'s Kode It")]'
     _enrol_button = '//a[@class="btn-primary btn-hg text-center"]'
     _verify_logged_user = '//img[@class="gravatar"]'
+    _login_button = '//a[@class="navbar-link fedora-navbar-link"]'
 
     # verifications
     def verify_if_page_is_visible(self):
@@ -29,3 +30,6 @@ class HomePage(BaseSetup, WebDriverCustomClass):
 
     def view_all_courses_button_click_on(self):
         self.click_on_element(self._view_more_courses_button, locator_type='xpath')
+
+    def log_in_button_click_to(self):
+        self.click_on_element(self._login_button, locator_type='xpath')
