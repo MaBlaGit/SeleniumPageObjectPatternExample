@@ -23,7 +23,6 @@ class SignUpNegative(BaseSetup, unittest.TestCase):
         self.sign_up_page.address_email_send_keys(data='')
         self.sign_up_page.password_send_keys(data='')
         self.sign_up_page.confirm_password_send_keys(data='')
-        self.sign_up_page.terms_of_use_checkbox_click_on()
         self.sign_up_page.sign_up_click_on()
         self.sign_up_page.verify_if_error_title_is_visible()
         self.sign_up_page.error_messages_print_to_console()

@@ -5,13 +5,14 @@ from letskodeitpop.base.base_setup import BaseSetup
 from letskodeitpop.base.webdriver_custom_class import WebDriverCustomClass
 
 
-class CoursePage(BaseSetup, WebDriverCustomClass):
+class CoursesPage(BaseSetup, WebDriverCustomClass):
 
     # locators
     _search_course_input_field = 'search-courses'
     _search_button = 'search-course-button'
     _course_courses_container = '//div[@class="row course-list list"]'
     _found_courses_listing = '//div[@class="course-listing-title"]'
+    _select_python_course = '//div[contains(text(), "Learn Python 3 from scratch")]'
 
     # verification
     def verify_if_page_is_visible(self):
@@ -28,3 +29,6 @@ class CoursePage(BaseSetup, WebDriverCustomClass):
         courses = self.get_elements(self._found_courses_listing, locator_type='xpath')
         for course in courses:
             print(course.text)
+
+    def select_course(self):
+        self.click_on_element(self._select_python_course, locator_type='xpath')
