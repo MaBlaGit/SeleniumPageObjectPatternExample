@@ -2,8 +2,8 @@
 """Credentials for sign up and sign in."""
 
 credentials = {
-    'name': 'Test TesTTTTTTTTT',
-    'email': 'test@testttttttttttt.us',
+    'name': 'Test TesTTTTTTTTTT',
+    'email': 'test@testttttttttttttt.us',
     'password': 'aaaaaaa'
     }
 
