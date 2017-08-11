@@ -4,7 +4,7 @@
 The aims of this repo is learning Page Object Pattern with Selenium WebDriver and Python. 
 The implementation base on the https://letskodeit.teachable.com/ webpage.
 
-### Tests was implementing and running on:
+### Tests were implemented and run on:
 
 * System: Linux Ubuntu 16.04 LTS
 * Browsers: Firefox 54, Chrome 60.0.3112.90
@@ -15,7 +15,7 @@ The implementation base on the https://letskodeit.teachable.com/ webpage.
 
 1.Clone/Download project: https://github.com/MaBlaGit/SeleniumPageObjectPatternExample
 
-2.Install __virtialenvwrapper__
+2.Install __virtualenvwrapper__
 ```
  $ pip install virtualenvwrapper
 ```
